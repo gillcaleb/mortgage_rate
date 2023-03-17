@@ -19,9 +19,6 @@ async def get_mortgage_rate():
         # Parse the HTML content using BeautifulSoup
         soup = BeautifulSoup(response.content, 'html.parser')
         
-        # Find the element containing the 30-year mortgage rate
-        table = soup.find("table", class_="hover stack")
-        
         # Find the table of historical rates
         table = soup.find("table", {"class": "hover stack"})
 
