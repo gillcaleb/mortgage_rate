@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/mortgage_rate")
 async def get_mortgage_rate():
-    # URL of the Bank of America website to scrape
+    # URL of the Freddie Mac website to scrape
     url = "https://www.freddiemac.com/pmms/pmms_archives"
     # Set user agent string to avoid getting blocked by server
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
