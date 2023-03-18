@@ -11,6 +11,7 @@ origins = [
     "http://localhost:3000",
     "https://calebgill.com",
     "https://calebgill.com:3000",
+    "https://calebgill.com:443",
 ]
 
 app.add_middleware(
